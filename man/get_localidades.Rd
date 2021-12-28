@@ -4,9 +4,18 @@
 \alias{get_localidades}
 \title{Obtener Localidades}
 \usage{
-get_localidades(id = NULL, nombre = NULL, provincia = NULL,
-  departamento = NULL, municipio = NULL, orden = NULL,
-  aplanar = TRUE, campos = NULL, max = NULL, exacto = NULL)
+get_localidades(
+  id = NULL,
+  nombre = NULL,
+  provincia = NULL,
+  departamento = NULL,
+  municipio = NULL,
+  orden = NULL,
+  aplanar = TRUE,
+  campos = NULL,
+  max = NULL,
+  exacto = NULL
+)
 }
 \arguments{
 \item{id}{text Filtrar por ID.}

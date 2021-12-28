@@ -4,9 +4,17 @@
 \alias{get_municipios}
 \title{Obtener Municipios}
 \usage{
-get_municipios(id = NULL, nombre = NULL, provincia = NULL,
-  departamento = NULL, orden = NULL, aplanar = TRUE, campos = NULL,
-  max = NULL, exacto = NULL)
+get_municipios(
+  id = NULL,
+  nombre = NULL,
+  provincia = NULL,
+  departamento = NULL,
+  orden = NULL,
+  aplanar = TRUE,
+  campos = NULL,
+  max = NULL,
+  exacto = NULL
+)
 }
 \arguments{
 \item{id}{text Filtrar por ID.}

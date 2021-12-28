@@ -4,8 +4,15 @@
 \alias{get_provincias}
 \title{Obtener Provincias}
 \usage{
-get_provincias(id = NULL, nombre = NULL, orden = NULL,
-  aplanar = TRUE, campos = NULL, max = NULL, exacto = NULL)
+get_provincias(
+  id = NULL,
+  nombre = NULL,
+  orden = NULL,
+  aplanar = TRUE,
+  campos = NULL,
+  max = NULL,
+  exacto = NULL
+)
 }
 \arguments{
 \item{id}{text Filtrar por ID.}
@@ -30,6 +37,6 @@ Obtener Provincias
 }
 \examples{
 \dontrun{
-get_provincias(nombre = "CÃ³rdoba")
+get_provincias(nombre = "Córdoba")
 }
 }

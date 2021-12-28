@@ -15,7 +15,7 @@
 #' @importFrom jsonlite fromJSON
 #' @importFrom httr GET content
 #' @export
-#' @rdname get_localidades
+#' @rdname get_localidad_censal
 #'
 #' @return Localidades Censales
 #' @examples
@@ -35,4 +35,3 @@ get_localidad_censal <- function(id = NULL, nombre = NULL, provincia = NULL, dep
 
   fromJSON(content(res, "text"))$localidades
 }
-

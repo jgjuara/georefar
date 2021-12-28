@@ -4,9 +4,17 @@
 \alias{get_calles}
 \title{Obtener Calles}
 \usage{
-get_calles(id = NULL, nombre = NULL, tipo = NULL, provincia = NULL,
-  departamento = NULL, aplanar = TRUE, campos = NULL, max = NULL,
-  exacto = NULL)
+get_calles(
+  id = NULL,
+  nombre = NULL,
+  tipo = NULL,
+  provincia = NULL,
+  departamento = NULL,
+  aplanar = TRUE,
+  campos = NULL,
+  max = NULL,
+  exacto = NULL
+)
 }
 \arguments{
 \item{id}{text Filtrar por ID.}

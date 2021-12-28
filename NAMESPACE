@@ -2,6 +2,7 @@
 
 export(get_calles)
 export(get_departamentos)
+export(get_localidad_censal)
 export(get_localidades)
 export(get_municipios)
 export(get_provincias)
