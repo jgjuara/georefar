@@ -15,23 +15,23 @@
 #' @importFrom jsonlite fromJSON
 #' @importFrom httr GET content
 #' @export
-#' @rdname get_localidad_censal
+#' @rdname get_asentamientos
 #'
-#' @return Localidades Censales
+#' @return Asentamientos BAHRA
 #' @examples
 #' \dontrun{
-#' get_localidad_censal()
+#' get_asentamientos()
 #' }
 
-get_localidad_censal <- function(id = NULL, nombre = NULL, provincia = NULL, departamento = NULL, municipio = NULL, orden = NULL, aplanar = TRUE, campos = NULL, max = NULL, exacto = NULL){
+get_asentamientos <- function(id = NULL, nombre = NULL, provincia = NULL, departamento = NULL, municipio = NULL, orden = NULL, aplanar = TRUE, campos = NULL, max = NULL, exacto = NULL){
   args <- list(id = id, nombre = nombre, provincia = provincia, departamento = departamento, municipio = municipio, orden = orden, aplanar = aplanar, campos = campos, max = max, exacto = exacto)
 
   check_internet()
 
-  base_url_get_localidades_censales <- paste0(base_url, "localidades-censales")
-  res <- GET(base_url_get_localidades_censales, query = compact(args))
+  base_url_get_asentamientos <- paste0(base_url, "asentamientos")
+  res <- GET(base_url_get_asentamientos, query = compact(args))
 
   check_status(res)
 
-  fromJSON(content(res, "text"))$localidades_censales
+  fromJSON(content(res, "text"))$asentamientos
 }
